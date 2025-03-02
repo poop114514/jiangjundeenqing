@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\o/\o/o\o/\o/\o/\o/</title>
+    <style>
+        body {
+            background-color: #a00000;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .leader-img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            border: 5px solid white;
+            transition: transform 0.3s ease-in-out;
+        }
+        .leader-img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .sun {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #ffcc00, #ff6600);
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(255, 204, 0, 0.8);
+            animation: sunrise 5s ease-in-out forwards;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
+        .sun img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        @keyframes sunrise {
+            from { top: -100px; opacity: 0; }
+            to { top: 50px; opacity: 1; }
+        }
+            /* 设置播放器的样式 */
+        .audio-player {
+        background-color: rgba(255, 3, 3, 0.22); /* 主色调：红色 */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 定义audio标签样式 */
+        audio {
+        width: 300px; /* 设置播放器宽度 */
+        border-radius: 8px; /* 边角圆滑 */
+        outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <img src="https://res.img.ifeng.com/2012/0413/wm_dfd0db22da0faa60b1dc7606bde00a62.jpg" alt="金正恩">
+    </div>
+    <header class="header">
+        <p>四日凌空</p>
+    </header>
+    <section class="container">
+        <figure>
+            <img src="https://www.nicedprk.com/kindeditor/attached/image/20190706/20190706195918351835.jpg" alt="金日成" class="leader-img">
+            <figcaption>金日成</figcaption>
+        </figure>
+        <figure>
+            <img src="https://p1.ssl.qhmsg.com/t01bc56e851dbc2dc5c.jpg" alt="金正日" class="leader-img">
+            <figcaption>金正日</figcaption>
+        </figure>
+        <figure>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.1UHjPKid95LgbKT1LIyYDQHaJE&pid=Api" alt="金正恩" class="leader-img">
+            <figcaption>金正恩</figcaption>
+        </figure>
+        <div class="audio-player">
+            <audio controls autoplay>
+              <source src="music/nrsd.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+    </section>
+</body>
+</html>
